@@ -10,22 +10,72 @@ knitr::opts_chunk$set(echo = TRUE)
 SciViews::R
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Objectif
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Ce document s'intéresse à la réalisation et l'interprétation de la régression linéaire.
 
-```{r cars}
-summary(cars)
+# Analyse
+
+> Importez les données `biometry` du package `BioDataScience1`. Utilisez la page d'aide pour en apprendre d'avantage sur ces données. Commentez ces données sur base de l'aide de la page d'aide en maximum 2 lignes.
+
+```{r read}
+bio <- read("...", package = "...")
 ```
 
-## Including Plots
+> Calculez la variable `bmi` qui est l'indice de masse corporelle (IMC) avec la fonction `mutate()`. Ajoutez également un label et des unités à cette nouvelle variable avec la fonction `labelise()`
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r mutate}
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+> Réalisez un nuage de points de la variable bmi en fonction de la variable age. Utilisez la fonction `chart()` et la fonction `geom_point()`. Commentez ce graphique en maximum 4 lignes. 
+
+```{r plot}
+
+```
+
+> Utilisez la fonction `lm()` afin de calculer la regression linéaire de la variable `bmi` en fonction de la variable `age`. 
+
+```{r lm}
+
+```
+
+> Ecrivez l'equation mathématique de ce modèle. Utilisez la syntaxe spécifique à latex avec les balises `$`.
+
+$$equation...$$
+
+> Réalisez un résumé avec la fonction `summary()` de votre objet lm réalisé précédement et commentez ce dernier en maximum 5 lignes.
+
+```{r summary}
+summary()
+```
+
+> Utilisez les outils de diagnostiques sur votre modèle. Réalisez l'analyse des résidus. Réalisez le premier graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+
+```{r diag1}
+
+```
+
+> Réalisez le second graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+
+```{r diag2}
+
+```
+
+> Réalisez le 3ième graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+
+```{r diag3}
+
+```
+
+
+> Réalisez le 4ième graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+
+```{r diag4}
+
+```
+
+> Selon vous, est ce que modèle représente correctement vos données. Répondez en maximum 4 lignes. 
+
