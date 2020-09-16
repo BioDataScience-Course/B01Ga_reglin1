@@ -17,7 +17,7 @@ Ce document s'intéresse à la réalisation et l'interprétation de la régressi
 
 # Analyse
 
-> Importez les données `biometry` du package `BioDataScience1`. Utilisez la page d'aide pour en apprendre d'avantage sur ces données. Commentez ces données sur base de l'aide de la page d'aide en maximum 2 lignes.
+> Importez les données `biometry` du package `BioDataScience`. Utilisez la page d'aide pour en apprendre d'avantage sur ces données. Commentez ces données sur base de l'aide de la page d'aide en maximum 2 lignes.
 
 ```{r read}
 bio <- read("...", package = "...")
